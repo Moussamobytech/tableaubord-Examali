@@ -1,7 +1,6 @@
 "use client"; 
 
 import React, { useState, useContext } from "react";
-import { ExamContext } from "./../context/ExamContext";
 
 export default function Page() {
   const { exams, addExam } = useContext(ExamContext);
