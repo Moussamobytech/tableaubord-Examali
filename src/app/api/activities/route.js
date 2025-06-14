@@ -33,7 +33,6 @@
 //     return NextResponse.json({ error: "Erreur lors de la récupération des activités." }, { status: 500 });
 //   };
 
-
 import { NextResponse } from "next/server";
 import { db } from "../../../lib/db";
 
@@ -73,5 +72,5 @@ export async function GET() {
       { error: "Erreur lors de la récupération des activités." },
       { status: 500 }
     );
-  }
-}
+  };
+};
