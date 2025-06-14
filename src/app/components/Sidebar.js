@@ -10,7 +10,7 @@ import {
   PlusCircleIcon,
   ArrowLeftOnRectangleIcon,
 } from "@heroicons/react/24/outline";
-
+import Image from 'next/image';
 export default function Sidebar() {
   const pathname = usePathname();
   const navLinks = [
@@ -26,11 +26,8 @@ export default function Sidebar() {
       <div className="p-4 h-full flex flex-col">
         <div className="mb-6 flex justify-center md:justify-start">
           <Link href="/dashboard">
-            <img
-              src="/logoexamali.png" 
-              alt="Logo de l'application"
-              className="h-25 w-50 max-w-[20px] md:max-w-[220px] object-contain" 
-            />
+      
+            <Image src="/logoexamali.png" alt="Logo" width={100} height={100} />
           </Link>
         </div>
 

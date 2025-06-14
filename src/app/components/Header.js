@@ -1,11 +1,11 @@
 "use client";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+
 import { useState, useEffect } from 'react';
 import { UserCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
-  const pathname = usePathname();
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Fermer le dropdown quand on clique ailleurs
