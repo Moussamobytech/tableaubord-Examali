@@ -5,4 +5,6 @@ export const db = mysql.createPool({
   user: 'root',          
   password: '',
   database: 'examali',  
+   waitForConnections: true,
+  connectionLimit: 10,
 });
